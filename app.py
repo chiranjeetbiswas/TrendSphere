@@ -114,7 +114,7 @@ def health():
 @app.route('/api/refresh')
 def refresh_trends():
     token = request.args.get('token')
-    if token != 'YOUR_SECRET_TOKEN':
+    if token != 'debu_chiru_su':
         return {'status': 'error', 'message': 'Unauthorized'}, 401
     # Call your scraping/cache refresh logic here if needed
     return {'status': 'success', 'message': 'Trends refreshed!'}
